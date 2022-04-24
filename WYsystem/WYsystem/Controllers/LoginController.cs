@@ -44,11 +44,8 @@ namespace WYsystem.Controllers
             else
             {
                 // 登录成功,跳转到后端的页面
-                return RedirectToAction("Admin/index");
+                return Redirect("/Admin/index");
             }
-
-
-
             return View();
         }
     }
