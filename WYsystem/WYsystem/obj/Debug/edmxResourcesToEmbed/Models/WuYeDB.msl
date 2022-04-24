@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WuyeProjectModelStoreContainer" CdmEntityContainer="wyEntities">
+    <EntitySetMapping Name="w_admin">
+      <EntityTypeMapping TypeName="WuyeProjectModel.w_admin">
+        <MappingFragment StoreEntitySet="w_admin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="nikename" ColumnName="nikename" />
+          <ScalarProperty Name="power" ColumnName="power" />
+          <ScalarProperty Name="createtime" ColumnName="createtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

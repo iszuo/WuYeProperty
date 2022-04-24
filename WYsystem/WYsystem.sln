@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WYsystem", "WYsystem\WYsystem.csproj", "{53CB14C0-9B06-49F8-A178-EE0B8D0C4A87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53CB14C0-9B06-49F8-A178-EE0B8D0C4A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CB14C0-9B06-49F8-A178-EE0B8D0C4A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CB14C0-9B06-49F8-A178-EE0B8D0C4A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CB14C0-9B06-49F8-A178-EE0B8D0C4A87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC14EDAC-9BAD-43C1-BA42-8BF24CF756CD}
+	EndGlobalSection
+EndGlobal
