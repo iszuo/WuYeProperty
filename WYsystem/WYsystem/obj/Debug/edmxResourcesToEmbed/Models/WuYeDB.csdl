@@ -13,5 +13,33 @@
   </EntityType>
   <EntityContainer Name="wyEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="w_admin" EntityType="Self.w_admin" />
+    <EntitySet Name="w_room_info" EntityType="WuyeProjectModel.w_room_info" />
+    <EntitySet Name="w_system_params" EntityType="WuyeProjectModel.w_system_params" />
   </EntityContainer>
+  <EntityType Name="w_room_info">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="link_name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stop_car_area" Type="Int32" Nullable="false" />
+    <Property Name="construct_date" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="road_area" Type="Int32" Nullable="false" />
+    <Property Name="romm_area" Type="Int32" Nullable="false" />
+    <Property Name="lh_area" Type="Int32" Nullable="false" />
+    <Property Name="room_number" Type="Int32" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="w_system_params">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

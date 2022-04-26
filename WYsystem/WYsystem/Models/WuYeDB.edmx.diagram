@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="97e96dde0b5140a1a5274326732b512f" Name="Diagram1">
         <EntityTypeShape EntityType="WuyeProjectModel.w_admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WuyeProjectModel.w_room_info" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WuyeProjectModel.w_system_params" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -13,5 +13,33 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="w_room_info">
+      <EntityTypeMapping TypeName="WuyeProjectModel.w_room_info">
+        <MappingFragment StoreEntitySet="w_room_info">
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="room_number" ColumnName="room_number" />
+          <ScalarProperty Name="lh_area" ColumnName="lh_area" />
+          <ScalarProperty Name="romm_area" ColumnName="romm_area" />
+          <ScalarProperty Name="road_area" ColumnName="road_area" />
+          <ScalarProperty Name="construct_date" ColumnName="construct_date" />
+          <ScalarProperty Name="stop_car_area" ColumnName="stop_car_area" />
+          <ScalarProperty Name="link_name" ColumnName="link_name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="w_system_params">
+      <EntityTypeMapping TypeName="WuyeProjectModel.w_system_params">
+        <MappingFragment StoreEntitySet="w_system_params">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

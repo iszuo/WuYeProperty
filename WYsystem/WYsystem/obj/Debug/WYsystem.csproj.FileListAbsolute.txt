@@ -89,3 +89,4 @@ F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csp
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csproj.CopyComplete
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.dll
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.pdb
+F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\EntityFramework.SqlServer.resources.dll

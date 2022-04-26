@@ -11,7 +11,35 @@
     <Property Name="power" Type="int" />
     <Property Name="createtime" Type="date" />
   </EntityType>
+  <EntityType Name="w_room_info">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phone" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="link_name" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="stop_car_area" Type="int" Nullable="false" />
+    <Property Name="construct_date" Type="date" Nullable="false" />
+    <Property Name="road_area" Type="int" Nullable="false" />
+    <Property Name="romm_area" Type="int" Nullable="false" />
+    <Property Name="lh_area" Type="int" Nullable="false" />
+    <Property Name="room_number" Type="int" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="remark" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="w_system_params">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="WuyeProjectModelStoreContainer">
     <EntitySet Name="w_admin" EntityType="Self.w_admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="w_room_info" EntityType="Self.w_room_info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="w_system_params" EntityType="Self.w_system_params" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

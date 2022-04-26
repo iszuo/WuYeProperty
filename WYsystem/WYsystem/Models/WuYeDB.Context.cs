@@ -26,5 +26,7 @@ namespace WYsystem.Models
         }
     
         public virtual DbSet<w_admin> w_admin { get; set; }
+        public virtual DbSet<w_room_info> w_room_info { get; set; }
+        public virtual DbSet<w_system_params> w_system_params { get; set; }
     }
 }
