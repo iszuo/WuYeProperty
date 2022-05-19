@@ -11,37 +11,45 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><h2>系统参数管理</h2></div>
                 <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-2" style="text-align:right;line-height:40px;">
-                            请选择参数列表：
+                    @*把数据提交给自己*@
+                    <form action="" method="get">
+                        <div class="row">
+                            <div class="col-md-2" style="text-align:right;line-height:40px;">
+                                请选择参数列表：
+                            </div>
+                            <div class="col-md-2">
+                                <select name="type" class="form-control">
+                                    <option value="">全部信息</option>
+                                    <option value="功能信息">功能信息</option>
+                                    <option value="单元信息">单元信息</option>
+                                    <option value="装修标准">装修标准</option>
+                                    <option value="朝向信息">朝向信息</option>
+                                    <option value="规格信息">规格信息</option>
+                                    <option value="楼宇信息">楼宇信息</option>
+                                    <option value="周边信息">周边信息</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="submit" name="name" value="查询" class="btn btn-primary" />
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <select name="type" class="form-control">
-                                <option value="功能信息">功能信息</option>
-                                <option value="单元信息">单元信息</option>
-                                <option value="装修标准">装修标准</option>
-                                <option value="朝向信息">朝向信息</option>
-                                <option value="规格信息">规格信息</option>
-                                <option value="楼宇信息">楼宇信息</option>
-                                <option value="周边信息">周边信息</option>
-                            </select>
-                        </div>
-                    </div>
-                    
+                    </form>
                 </div>
-                <table class="table" style="tet">
+                <table class="table" style="text-align:center;">
                     <thead>
                         <tr>
-                            <th>
+                            <th style="text-align:center;">
                                 @Html.DisplayNameFor(model => model.code)
                             </th>
-                            <th>
+                            <th style="text-align:center;">
                                 @Html.DisplayNameFor(model => model.name)
                             </th>
-                            <th>
+                            <th style="text-align:center;">
                                 @Html.DisplayNameFor(model => model.type)
                             </th>
-                            <th></th>
+                            <th>
+                                <span></span>
+                            </th>
                         </tr>
                     </thead>
                     @if (Model.Count() < 1)
@@ -64,8 +72,7 @@
                             </td>
                             <td>
                                 @Html.ActionLink("编辑", "Edit", new { id = item.id }) |
-                                @Html.ActionLink("详情", "Details", new { id = item.id }) |
-                                @Html.ActionLink("删除", "Delete", new { id = item.id })
+                                <a href="/System/DeleteConfirmed/@item.id" onclick="return confirm('确认删除吗？')">删除</a>
                             </td>
                         </tr>
                     }

@@ -11,14 +11,24 @@ namespace WYsystem.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class w_admin
     {
         public int id { get; set; }
+        [Display(Name = "登录账号")]
         public string username { get; set; }
+        [Display(Name = "登录密码")]
+
         public string pass { get; set; }
+        [Display(Name = "管理员昵称")]
+
         public string nikename { get; set; }
+        [Display(Name = "管理员权限")]
+
+
         public Nullable<int> power { get; set; }
+        [Display(Name = "创建时间")]
         public Nullable<System.DateTime> createtime { get; set; }
     }
 }

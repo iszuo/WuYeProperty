@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SystemController.cs" />
+    <Compile Include="Controllers\WadminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1936,6 +1937,11 @@
     <Content Include="Views\System\Details.cshtml" />
     <Content Include="Views\System\Edit.cshtml" />
     <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\Wadmin\Create.cshtml" />
+    <Content Include="Views\Wadmin\Delete.cshtml" />
+    <Content Include="Views\Wadmin\Details.cshtml" />
+    <Content Include="Views\Wadmin\Edit.cshtml" />
+    <Content Include="Views\Wadmin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

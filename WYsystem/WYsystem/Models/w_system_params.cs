@@ -11,12 +11,18 @@ namespace WYsystem.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class w_system_params
     {
         public int id { get; set; }
+        [Display(Name = "代码")]
         public string code { get; set; }
+        [Display(Name = "名称")]
+
         public string name { get; set; }
+        [Display(Name = "类型")]
+
         public string type { get; set; }
     }
 }

@@ -84,9 +84,9 @@ F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\System.Web
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\System.Web.WebPages.resources.dll
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csproj.AssemblyReference.cache
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csproj.CoreCompileInputs.cache
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csproj.CopyComplete
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.dll
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.pdb
 F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\Gitee个人仓库\other\WuyeProperty\WYsystem\WYsystem\obj\Debug\WYsystem.csproj.AssemblyReference.cache

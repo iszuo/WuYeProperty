@@ -1,0 +1,98 @@
+﻿@model IEnumerable<WYsystem.Models.w_admin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_BackAdmin.cshtml";
+}
+
+
+
+
+<div class="container-fluid">
+    <div class="row cm-fix-height">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h2>系统管理员管理</h2></div>
+                <div class="panel-body">
+
+
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.username)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.pass)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.nikename)
+                            </th>
+                            
+                            <th>
+                                @Html.DisplayNameFor(model => model.createtime)
+                            </th>
+                            <th>
+                                操作
+                            </th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.username)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.pass)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nikename)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.createtime)
+                        </td>
+                        <td>
+                            @Html.ActionLink("修改密码", "Edit", new { id = item.id }) |
+                            <a href="/Wadmin/DeleteConfirmed/@item.id" onclick="return confirm('确认删除吗？')">删除</a>
+
+                        </td>
+                    </tr>
+                        }
+
+                    </table>
+
+                    <!-- 实行添加操作 -->
+                    <form action="/Wadmin/Create" method="post" style="margin-top:40px;">
+                        <table class="table">
+                            <tr>
+                                <td style="text-align:right;line-height:40px;">登录账号：</td>
+                                <td>
+                                    <input class="form-control" type="text" name="username" required placeholder="请输入登录账号！" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right; line-height: 40px;">登录密码：</td>
+                                <td>
+                                    <input class="form-control" type="text" name="pass" required placeholder="请输入登录密码！" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right; line-height: 40px;">昵称：</td>
+                                <td>
+                                    <input class="form-control" type="text" name="nikename" required placeholder="请输入管理员昵称！" value="" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" class="btn btn-default" value="保存" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

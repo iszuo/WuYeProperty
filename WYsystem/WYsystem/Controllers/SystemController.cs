@@ -15,9 +15,22 @@ namespace WYsystem.Controllers
         private wyEntities db = new wyEntities();
 
         // GET: System
-        public ActionResult Index()
+        public ActionResult Index(string type="")
         {
-            return View(db.w_system_params.ToList());
+            IEnumerable<w_system_params> list = db.w_system_params.ToList();
+            // 需要手动点击后才可以经行判断
+            //if (type != "")
+            //{
+            //    list = list.Where(p => p.type == type);
+            //}
+
+
+            // 页面加载完后会直接进行判断
+            if (!string.IsNullOrEmpty(type))
+            {
+                list = list.Where(p => p.type == type).ToList();
+            }
+            return View(list);
         }
 
         // GET: System/Details/5
@@ -93,23 +106,6 @@ namespace WYsystem.Controllers
         }
 
         // GET: System/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            w_system_params w_system_params = db.w_system_params.Find(id);
-            if (w_system_params == null)
-            {
-                return HttpNotFound();
-            }
-            return View(w_system_params);
-        }
-
-        // POST: System/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             w_system_params w_system_params = db.w_system_params.Find(id);
